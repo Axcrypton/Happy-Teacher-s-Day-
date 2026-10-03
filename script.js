@@ -83,14 +83,14 @@ const it11b = [
         image: "IT11B/SecretaryB.jpg",
         position: "SECRETARY",
         name: "BLAS, MARIAN",
-        quote: "Your quote goes here."
+        quote: "To our teachers: thank you for making us academically stressed but emotionally educated."
     },
 
     {
         image: "IT11B/TreasurerB.jpg",
         position: "TREASURER",
         name: "OCAMPO, CEAN",
-        quote: "quote mo pre?."
+        quote: "To the world, you may be just a teacher, but to your students, you are a hero. Happy Teacher's Day po! ❤️🤗."
     },
 
     {
@@ -137,10 +137,43 @@ function showScreen(id) {
 
 function startProgram() {
 
-    showScreen("it11a-title");
+    const music = document.getElementById("background-music");
 
+    music.volume = 0.4;
+
+    music.play()
+        .then(() => {
+            console.log("Music started!");
+        })
+        .catch((error) => {
+            console.error("Music could not play:", error);
+        });
+
+    showScreen("it11a-title");
 }
 
+function toggleMusic() {
+
+    const music = document.getElementById("background-music");
+    const button = document.getElementById("music-button");
+
+    if (music.paused) {
+
+        music.play()
+            .then(() => {
+                button.textContent = "♫";
+            })
+            .catch((error) => {
+                console.error("Music could not play:", error);
+            });
+
+    } else {
+
+        music.pause();
+
+        button.textContent = "♪";
+    }
+}
 
 /* =========================================================
    START IT11A
