@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Teacher's Day | IT11A & IT11B</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BACKGROUND MUSIC -->
+        <audio id="background-music" loop preload="auto">
+            <source src="teacher-day-music.mp3" type="audio/mpeg">
+        </audio>
+
+    <!-- MUSIC CONTROL -->
+        <button id="music-button" onclick="toggleMusic()">
+            ♪
+        </button>
+
+
+    <!-- =====================================================
+         MAIN EXPERIENCE
+    ====================================================== -->
+
+    <main id="experience">
+
+        <!-- ==================== SCREEN 1 ==================== -->
+
+        <section class="screen active" id="welcome-screen">
+
+            <div class="dark-overlay"></div>
+
+            <div class="content welcome-content">
+
+                <p class="small-label">IT11A × IT11B</p>
+
+                <h1>
+                    HAPPY<br>
+                    TEACHER'S DAY
+                </h1>
+
+                <div class="line"></div>
+
+                <p class="intro-text">
+                    To the teachers who guide us,
+                    challenge us, and help us become
+                    more than we thought we could be.
+                </p>
+
+                <button class="main-button" onclick="startProgram()">
+                    BEGIN
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== IT11A TITLE ==================== -->
+
+        <section class="screen" id="it11a-title">
+
+            <div class="dark-overlay"></div>
+
+            <div class="content section-title">
+
+                <p class="small-label">THE OFFICERS OF</p>
+
+                <h2>IT11A</h2>
+
+                <div class="line"></div>
+
+                <p>
+                    Before we continue,
+                    here's a message from the officers
+                    of IT11A.
+                </p>
+
+                <button class="main-button" onclick="startIT11A()">
+                    MEET IT11A
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== OFFICER SCREEN ==================== -->
+
+        <section class="screen officer-screen" id="officer-screen">
+
+            <div class="dark-overlay"></div>
+
+            <div class="officer-content">
+
+                <div class="officer-number" id="officer-number">
+                    01 / 00
+                </div>
+
+                <div class="photo-container">
+
+                    <img
+                        id="officer-image"
+                        src=""
+                        alt="Officer"
+                    >
+
+                </div>
+
+                <div class="officer-info">
+
+                    <p class="officer-position" id="officer-position">
+                        POSITION
+                    </p>
+
+                    <h2 id="officer-name">
+                        OFFICER NAME
+                    </h2>
+
+                    <div class="line small-line"></div>
+
+                    <p class="officer-quote" id="officer-quote">
+                        "Quote goes here."
+                    </p>
+
+                </div>
+
+                <button
+                    class="next-button"
+                    id="officer-next"
+                    onclick="nextOfficer()"
+                >
+                    NEXT →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== IT11B TITLE ==================== -->
+
+        <section class="screen" id="it11b-title">
+
+            <div class="dark-overlay"></div>
+
+            <div class="content section-title">
+
+                <p class="small-label">NEXT UP</p>
+
+                <h2>IT11B</h2>
+
+                <div class="line"></div>
+
+                <p>
+                    And now, a message from
+                    the officers of IT11B.
+                </p>
+
+                <button class="main-button" onclick="startIT11B()">
+                    MEET IT11B
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== FINALE ==================== -->
+
+        <section class="screen" id="finale-screen">
+
+            <div class="dark-overlay"></div>
+
+            <div class="content finale-content">
+
+                <p class="small-label">
+                    FROM IT11A & IT11B
+                </p>
+
+                <h2>
+                    TO OUR<br>
+                    TEACHERS
+                </h2>
+
+                <div class="line"></div>
+
+                <p class="final-message">
+                    Thank you for being more than just
+                    the people who teach us lessons.
+
+                    <br><br>
+
+                    Thank you for the patience,
+                    guidance, encouragement,
+                    and countless moments that
+                    helped us grow.
+
+                    <br><br>
+
+                    Every lesson you give us becomes
+                    a part of the people we are
+                    becoming.
+                </p>
+
+                <h3>
+                    HAPPY TEACHER'S DAY
+                </h3>
+
+                <p class="signature">
+                    — IT11A & IT11B
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
