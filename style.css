@@ -379,6 +379,14 @@ button {
     opacity: 0.9;
 }
 
+.officer-quote2 {
+    margin-top: 18px;
+    font-size: 0.85rem;
+    font-style: italic;
+    opacity: 0.75;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+}
 
 /* Next */
 
@@ -536,8 +544,7 @@ button {
 
 #music-button {
     position: fixed;
-
-    top: 25px;
+    bottom: 25px;
     right: 25px;
 
     z-index: 1000;
@@ -548,20 +555,16 @@ button {
     border-radius: 50%;
 
     color: white;
-
     background: rgba(0, 0, 0, 0.3);
-
     border: 1px solid rgba(255, 255, 255, 0.6);
 
     backdrop-filter: blur(10px);
 
     font-size: 1.2rem;
-
     cursor: pointer;
 
-    transition:
-        transform 0.3s ease,
-        background 0.3s ease;
+    transition: transform 0.3s ease,
+                background 0.3s ease;
 }
 
 #music-button:hover {
@@ -760,13 +763,13 @@ button {
 ========================================================= */
 
 @media (max-width: 700px) {
-
     #music-button {
-        top: 15px;
-        right: 15px;
-
+        bottom: 18px;
+        right: 18px;
         width: 42px;
         height: 42px;
+        font-size: 1rem;
     }
+}
 
 }
