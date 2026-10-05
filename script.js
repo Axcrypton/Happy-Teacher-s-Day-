@@ -233,6 +233,16 @@ function showOfficer() {
     document.getElementById("officer-quote").textContent =
         `"${officer.quote}"`;
 
+   const quote2 = document.getElementById("officer-quote2");
+
+   if (officer.quote2) {
+       quote2.textContent = officer.quote2;
+       quote2.style.display = "block";
+   } else {
+       quote2.textContent = "";
+       quote2.style.display = "none";
+   }
+
 
     document.getElementById("officer-number").textContent =
         `${String(currentOfficer + 1).padStart(2, "0")} / ${String(currentGroup.length).padStart(2, "0")}`;
